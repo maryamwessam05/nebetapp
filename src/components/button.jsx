@@ -7,6 +7,7 @@ const Button = (props) => {
         <button onClick={props.onClick} className={props.style}>
             <div className={props.rec}></div>
             {props.text}
+            <img src={props.icon} alt="" />
         </button>
         </>
      );

@@ -19,6 +19,7 @@
 a{
     text-decoration: none;
     width: inherit;
+    color: inherit;
 }
 body {
     
@@ -492,4 +493,242 @@ align-self: stretch;
 .row{
     display: flex;
     gap: 10px;
+}
+
+/* HOME */
+
+.homescreen{
+    display: flex;
+width: 100%;
+padding: 53px 20px 44px 20px;
+flex-direction: column;
+align-items: center;
+gap: 44px;
+background: #0B0B0B;
+position: relative;
+    height: 100vh;        
+    overflow-y: auto;  
+}
+.homescreen::-webkit-scrollbar {
+    display: none;
+}
+
+.homescreen {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookbtn{
+    width: 60%;
+}
+
+.herotxt{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+margin-top: -100px;
+}
+
+.date{
+    display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-top: 0.5px solid #F0E1CE;
+border-bottom: 0.5px solid #F0E1CE;
+}
+.date h4{
+    color: rgba(240, 225, 206, 0.70);
+leading-trim: both;
+text-edge: cap;
+font-family: "Darker Grotesque";
+font-size: 17.953px;
+font-style: normal;
+font-weight: 400;
+line-height: 25.647px; /* 142.857% */
+}
+
+.herotxt h1{
+    color: #F0E1CE;
+leading-trim: both;
+text-edge: cap;
+font-family: "Darker Grotesque";
+font-size: 50.225px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; /* 133.333% */
+}
+
+.herotxt p{
+    color: #F0E1CE;
+leading-trim: both;
+text-edge: cap;
+font-family: "Darker Grotesque";
+font-size: 21.23px;
+font-style: normal;
+font-weight: 300;
+line-height: 21px; /* 315.435% */
+}
+.explore{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 17px;
+align-self: stretch;
+width: 100%;
+}
+.sections{
+    width: 100%;
+    display: flex;
+align-items: center;
+gap: 15px;
+}
+.sec{
+    display: flex;
+height: 232px;
+padding: 16px;
+width: 50%;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+gap: 10px;
+flex: 1 0 0;
+background-image: url("../assets/sec1.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.sec2{
+        display: flex;
+height: 109px;
+padding: 16px;
+width: 100%;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+gap: 10px;
+flex: 1 0 0;
+background-image: url("../assets/sec2.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.sec3{
+        display: flex;
+height: 109px;
+padding: 16px;
+width: 100%;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+gap: 10px;
+flex: 1 0 0;
+background-image: url("../assets/sec3.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.seccol{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+flex: 1 0 0;
+}
+.header{
+color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; 
+}
+
+.blurar{
+    align-self: flex-end;
+}
+
+.sec h5 , .sec2 h5 ,.sec3 h5{
+    color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 27px; /* 135% */
+}
+
+.booki{
+    display: flex;
+    flex-direction: column
+    ;
+    gap: 15px;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.ticktxt{
+position: absolute;
+top: 20%;
+    left: 6px;
+display: flex;
+width: 242px;
+height: 116px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+}
+
+
+
+.ticktxt h1{
+    color: #F0E1CE;
+text-align: center;
+font-family: "Darker Grotesque";
+font-size: 31px;
+font-style: normal;
+font-weight: 600;
+line-height: 27px; /* 87.097% */
+}
+.det{
+    display: flex;
+height: 13.002px;
+align-items: center;
+gap: 10.404px;
+flex-shrink: 0;
+}
+
+.pair{
+    display: flex;
+align-items: center;
+gap: 2.598px;
+}
+
+.pair span{
+    color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 9.104px;
+font-style: normal;
+font-weight: 400;
+line-height: 13.006px; /* 142.857% */
+}
+
+.sidelogo{
+    width: 11vw;
+}
+
+.navcont{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    max-width: 414px;
 }

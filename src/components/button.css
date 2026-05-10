@@ -13,6 +13,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
+position: relative;
 }
 .blackbtn{
     display: flex;
@@ -20,6 +21,7 @@ width: 100%;
 padding: 12px 0;
 justify-content: center;
 align-items: center;
+position: relative;
 gap: 10px;
 background: #0B0B0B;
 color: #F0E1CE;
@@ -35,7 +37,7 @@ border: 0.59px solid rgba(240, 225, 206, 0.20);
     position: absolute;
     width
 : 84%;
-    height: 8%;
+    height: 6%;
 
     border: 1px solid rgba(11, 11, 11, 0.58);
 }
@@ -48,6 +50,11 @@ border: 0.59px solid rgba(240, 225, 206, 0.20);
     border: 1px solid rgba(11, 11, 11, 0.58);
 }
 
+.rec3{     position: absolute;
+        width: 97%;
+    height: 75%;
+    border: 1px solid rgba(11, 11, 11, 0.58);
+}
 button{
     border: none;
     cursor: pointer;
