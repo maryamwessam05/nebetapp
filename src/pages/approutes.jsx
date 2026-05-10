@@ -10,6 +10,8 @@ const AppRoutes = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<SplashScreen />} />
+                <Route path="/home" element={<Home />} />
+
 
             </Routes>
         </BrowserRouter>
