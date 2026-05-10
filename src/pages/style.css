@@ -1,12 +1,93 @@
-main{
-    background-color: black;
-    height: 100vh;
-    overflow-x: hidden;
-    padding: ;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}main{
+    background-color: #0B0B0B;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    padding: 20px 20px 75px 20px;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content
+: center;
+    align-items: center;
+    gap: 44px;
+    position: relative;
+    width: 100%;
+}
+body {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+.anim{
+      transform: rotate(90deg);
+    position: absolute;
+    left: -189px;
+    top: 305px;
+    scale: 2.43;
+    opacity: 0.4;
+}
+
+.anim2{
+      transform: rotate(90deg);
+    position: absolute;
+    right: -189px;
+    top: 305px;
+    scale: 2.43;
+    opacity: 0.4;
+}
+
+.logo{
+    overflow: hidden;
+}
+
+.logo img{
+    transform: translateY(150px);
+    opacity: 0;
+    animation: fadeUp 3s ease forwards;
+}
+
+@keyframes fadeUp {
+    0%{
+         transform: translateY(150px);
+    opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+    opacity: 1;
+    }
+}
+.splash-intro {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0B0B0B;
+}
+
+.splash-intro--leaving {
+    animation: splashExit 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes splashExit {
+    0% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-100%);
+        opacity: 0;
+    }
 }
