@@ -1,0 +1,54 @@
+.beigebtn{
+    display: flex;
+width: 100%;
+padding: 12px 0;
+justify-content: center;
+align-items: center;
+gap: 10px;
+background: #F0E1CE;
+color: #0B0B0B;
+text-align: center;
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+.blackbtn{
+    display: flex;
+width: 100%;
+padding: 12px 0;
+justify-content: center;
+align-items: center;
+gap: 10px;
+background: #0B0B0B;
+color: #F0E1CE;
+text-align: center;
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+border: 0.59px solid rgba(240, 225, 206, 0.20);
+}
+.rec{
+    position: absolute;
+    width
+: 84%;
+    height: 8%;
+
+    border: 1px solid rgba(11, 11, 11, 0.58);
+}
+
+.rec2{
+    display: none;
+     position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgba(11, 11, 11, 0.58);
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}

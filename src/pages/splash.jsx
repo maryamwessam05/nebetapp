@@ -121,7 +121,7 @@ const [animState, setAnimState] = useState("idle");
             </button>
 
             {isLast ? (
-            <Link to={"/home"}>
+            <Link to={"/login"}>
               <button className="get-started" onClick={() => { /* navigate */ }}>
                 Get started
               </button>
