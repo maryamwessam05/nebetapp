@@ -1,0 +1,36 @@
+.tickdet{
+    display: flex;
+align-items: center;
+gap: 11.994px;
+align-self: stretch;
+width: 100%;
+}
+
+.detxt{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 2px;
+}
+
+.detxt span{
+    color: rgba(240, 225, 206, 0.50);
+leading-trim: both;
+text-edge: cap;
+font-family: "Darker Grotesque";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px; /* 133.333% */
+}
+
+.detxt h4{
+color: #F0E1CE;
+leading-trim: both;
+text-edge: cap;
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 150% */
+}

@@ -5,9 +5,9 @@ const Button = (props) => {
     return ( 
         <>
         <button onClick={props.onClick} className={props.style}>
+            <img src={props.icon} alt="" />
             <div className={props.rec}></div>
             {props.text}
-            <img src={props.icon} alt="" />
         </button>
         </>
      );

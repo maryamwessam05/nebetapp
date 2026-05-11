@@ -732,3 +732,119 @@ line-height: 13.006px; /* 142.857% */
     bottom: 0;
     max-width: 414px;
 }
+
+/* TICKET */
+
+.ticketscreen{
+    display: flex;
+width: 100%;
+padding: 53px 20px 44px 20px;
+flex-direction: column;
+align-items: center;
+gap: 44px;
+position: relative;
+    height: 100vh;        
+    overflow-y: auto;  
+}
+.ticketcreen::-webkit-scrollbar {
+    display: none;
+}
+
+.ticketscreen {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.headercont{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 7px;
+align-self: stretch;
+width: 100%;
+}
+
+.headercont span{
+    color: rgba(240, 225, 206, 0.60);
+leading-trim: both;
+text-edge: cap;
+font-family: "Darker Grotesque";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px; /* 142.857% */
+}
+
+.tickcont{
+    width: 100%;
+
+height: 530px;
+background-image: url("../assets/tickframe.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding: 48px 42px;
+gap: 15px;
+display: flex;
+flex-direction: column;
+
+}
+
+.tickrow{
+    display: flex;
+justify-content: space-between;
+align-items: flex-start;
+align-self: stretch;
+}
+
+.tickstat{
+    display: flex;
+padding: 5px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border: 0.59px solid rgba(240, 225, 206, 0.20);
+color: rgba(240, 225, 206, 0.50);
+text-align: center;
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
+.qr{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 6px;
+}
+
+.qr span{
+    color: rgba(240, 225, 206, 0.50);
+text-align: center;
+font-family: "Darker Grotesque";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+}
+
+.tickdeet{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 18px;
+align-self: stretch;
+width: 100%;
+}
+
+.tickbtns{
+    display: flex;
+padding-right: 0;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+width: 100%;
+padding-bottom: 100px;
+}
