@@ -4,6 +4,8 @@ import Home from './home';
 import SplashScreen from './splash';
 import Login from './login';
 import Ticket from './ticket';
+import Map from './map';
+import Alert from './alert';
 
 
 const AppRoutes = () => {
@@ -15,6 +17,10 @@ const AppRoutes = () => {
                 <Route path="/home" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/ticket" element={<Ticket />} />
+                <Route path="/map" element={<Map />} />
+                <Route path="/alerts" element={<Alert />} />
+
+
 
 
 

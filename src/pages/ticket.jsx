@@ -1,13 +1,7 @@
 import React from 'react';
 import "./style.css"
 import sidelogo from "../assets/sidelogo.svg"
-import heroimg from "../assets/heroimg.png"
 import Button from '../components/button';
-import arrow from "../assets/arrw.svg"
-import blurar from "../assets/bluar.svg"
-import tick from "../assets/ticket.svg"
-import cal from "../assets/cal.svg"
-import loc from "../assets/loc.svg"
 import Nav from '../components/nav';
 import ticklogo from "../assets/ticklogo.svg"
 import qr from "../assets/QR Code.svg"
