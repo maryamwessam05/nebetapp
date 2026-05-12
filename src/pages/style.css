@@ -69,7 +69,12 @@ body {
 .logo{
     overflow: hidden;
 }
-
+.splashlogo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .logo img{
     transform: translateY(150px);
     opacity: 0;
@@ -93,7 +98,7 @@ body {
     z-index: 100;
     width: 100%;
     max-width: 414px;
-    margin: 0 auto;
+
     left: 50%;
     transform: translateX(-50%);
     background: #0B0B0B;
@@ -218,6 +223,8 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 8.123px;
+width: 20%;
+align-self: flex-start;
 background-color: #0B0B0B;
 border-radius: 28.43px;
 border: 0.812px solid #F0E1CE;
@@ -524,7 +531,9 @@ position: relative;
 }
 
 .bookbtn{
-    width: 60%;
+    width: 90%;
+    display: flex;
+    gap: 10px;
 }
 
 .herotxt{
@@ -956,3 +965,262 @@ flex-direction: column;
 align-items: flex-start;
 flex-shrink: 0;
 }
+
+/* BOOKING */
+
+form{
+     display: flex;
+width: 100%;
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+padding-bottom: 100px;
+}
+
+.datein{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+align-self: stretch;
+}
+
+.datein input{
+    display: flex;
+height: 57.176px;
+padding: 16px;
+align-items: center;
+flex-shrink: 0;
+align-self: stretch;
+border: 0.59px solid rgba(240, 225, 206, 0.20);
+background: rgba(240, 225, 206, 0.05);
+width: 100%;
+color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+position: relative;/* 150% */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  position: absolute;
+  right: 16px;
+  filter: invert(1);
+
+  cursor: pointer;
+}
+
+.boxes{
+    display: flex;
+align-items: flex-start;
+align-content: flex-start;
+gap: 10px;
+align-self: stretch;
+flex-wrap: wrap;
+}
+
+.time{
+    display: flex;
+width: 117px;
+padding: 12px 26px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border: 0.59px solid rgba(240, 225, 206, 0.20);
+background: rgba(240, 225, 206, 0.05);
+color: #F0E1CE;
+text-align: center;
+font-family: "Darker Grotesque";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+}
+
+.datein h6{
+    color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
+.boxestt{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+flex-shrink: 0;
+align-self: stretch;
+}
+
+.type{
+    display: flex;
+padding: 16px 13px;
+justify-content: space-between;
+align-items: flex-start;
+gap: 8px;
+flex-shrink: 0;
+align-self: stretch;
+width: 100%;
+border: 0.59px solid rgba(240, 225, 206, 0.20);
+background: #1A1A1A;
+}
+
+.type h4{
+    color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 27px; /* 150% */
+}
+
+.type span{
+color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
+.type-active{
+    display: flex;
+padding: 16px 13px;
+justify-content: space-between;
+align-items: flex-start;
+gap: 8px;
+flex-shrink: 0;
+align-self: stretch;
+width: 100%;
+border: 1px solid #F0E1CE;
+background: #F0E1CE;
+}
+
+.type-active h4{
+  color: #181716;
+font-family: "Darker Grotesque";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 27px; /* 150% */
+}
+
+.type-active span{
+color: #181716;
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
+.tick{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tick button{
+    padding: 0 !important;
+    margin:6px 0 0 0 !important
+
+}
+
+.tick img{
+    filter: invert(1);
+}
+
+.tick h1{
+  color: #F0E1CE;
+    font-family: "Darker Grotesque";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    width: 30px;
+}
+
+.tickbtn{
+       border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+padding: 16.475px 21.966px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border: 0.3px solid #F0E1CE;
+}
+
+.subtotal{
+    display: flex;
+padding: 17px;
+flex-direction: column;
+align-items: flex-start;
+gap: 11px;
+align-self: stretch;
+border: 0.59px solid rgba(240, 225, 206, 0.30);
+}
+
+.rows{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+
+.rotot{
+display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+padding-top: 10px;
+border-top: 0.59px solid #F0E1CE;
+
+}
+
+.rows h6{
+    color: rgba(240, 225, 206, 0.70);
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+.rows span{
+    color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+.rotot h4{
+    color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+}
+
+.rotot h1{
+    color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px; /* 133.333% */
+}
+

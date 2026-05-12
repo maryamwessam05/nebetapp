@@ -6,6 +6,8 @@ import Login from './login';
 import Ticket from './ticket';
 import Map from './map';
 import Alert from './alert';
+import Booking from './booking';
+import Details from './details';
 
 
 const AppRoutes = () => {
@@ -19,6 +21,9 @@ const AppRoutes = () => {
                 <Route path="/ticket" element={<Ticket />} />
                 <Route path="/map" element={<Map />} />
                 <Route path="/alerts" element={<Alert />} />
+                <Route path="/booking" element={<Booking />} />
+                <Route path="/details" element={<Details />} />
+
 
 
 

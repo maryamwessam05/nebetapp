@@ -29,8 +29,11 @@ const SplashIntro = ({ onComplete }) => {
             <div className="anim2">
                 <AnimatedSVG duration={7} />
             </div>
-            <div className="logo">
-                <img src={logo} alt="" />
+            <div className="splashlogo">
+                <div className="logo">
+                    <img src={logo} alt="" />
+                </div>
+
             </div>
         </main>
     );

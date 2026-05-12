@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./style.css"
 import sidelogo from "../assets/sidelogo.svg"
 import heroimg from "../assets/heroimg.png"
@@ -26,8 +27,12 @@ const Home = () => {
                         <h1>Nebet Exhibit</h1>
                         <p>Discover the ancient rituals</p>
                         <div className="bookbtn">
-                        <Button style="beigebtn" rec="rec3" text="Book Now" icon={arrow} />
-
+                            <Link to={"/booking"}>
+                                <Button style="beigebtn" rec="rec2" text="Book Now" icon={arrow} />
+                            </Link>
+                            <Link to={"/details"}>
+                                <Button style="blackbtn" rec="rec" text="View Details" />
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -35,6 +40,7 @@ const Home = () => {
                 <div className="explore">
                     <h1 className='header'>Explore Sections</h1>
                     <div className="sections">
+                        
                             <div className="sec">
                                 <img className='blurar' src={blurar} alt="" />
                                 <h5>Origins</h5>
@@ -55,7 +61,7 @@ const Home = () => {
 
                 <div className="booki">
                     <h1 className="header">Your Booking</h1>
-                    <div className="tick">
+                    <div className="tick1">
                         <img src={tick} alt="" />
                         <div className="ticktxt">
                             <img className='sidelogo' src={sidelogo} alt="" />
