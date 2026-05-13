@@ -507,7 +507,7 @@ align-self: stretch;
 .homescreen{
     display: flex;
 width: 100%;
-padding: 53px 20px 44px 20px;
+padding: 53px 20px 74px 20px;
 flex-direction: column;
 align-items: center;
 gap: 44px;
@@ -1222,5 +1222,92 @@ font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: 32px; /* 133.333% */
+}
+
+
+.tickdeets{
+    display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+gap: 11px;
+align-self: stretch;
+width: 100%;
+}
+
+.dett{
+    display: flex;
+    width: 177px;
+    padding: 10px 8px;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 7.999px;
+flex-wrap: wrap;
+border: 0.5px solid #F0E1CE;
+background: #1A1A1A;
+}
+
+.about{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 17px;
+align-self: stretch;
+}
+
+.about h1{
+    color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 116.667% */
+}
+
+.about p{
+    color: rgba(240, 225, 206, 0.70);
+font-family: "Darker Grotesque";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+
+.whatin{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 17px;
+align-self: stretch;
+}
+
+.whatin h1{
+    color: #F0E1CE;
+font-family: "Darker Grotesque";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 116.667% */
+}
+
+.spss{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.sp{
+    display: flex;
+padding: 19px 0 19px 13px;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-top: 1px solid #F0E1CE;
+color: rgba(240, 225, 206, 0.70);
+font-family: "Darker Grotesque";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 100% */
 }
 
