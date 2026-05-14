@@ -78,6 +78,10 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to={"/rating"}>
+                    <Button style="blackbtn" text="Rate your Experience" />
+                    
+                    </Link>
                 </div>
 
                 <div className="navcont">

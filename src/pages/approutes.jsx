@@ -8,6 +8,8 @@ import Map from './map';
 import Alert from './alert';
 import Booking from './booking';
 import Details from './details';
+import Rating from './rating';
+import ComingSoon from './comingsoon';
 
 
 const AppRoutes = () => {
@@ -23,12 +25,8 @@ const AppRoutes = () => {
                 <Route path="/alerts" element={<Alert />} />
                 <Route path="/booking" element={<Booking />} />
                 <Route path="/details" element={<Details />} />
-
-
-
-
-
-
+                <Route path="/rating" element={<Rating />} />
+                <Route path="/comingsoon" element={<ComingSoon />} />
             </Routes>
         </BrowserRouter>
         </>
