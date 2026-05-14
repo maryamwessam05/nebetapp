@@ -40,11 +40,12 @@ const Home = () => {
                 <div className="explore">
                     <h1 className='header'>Explore Sections</h1>
                     <div className="sections">
-                        
+                        <Link to={"/comingsoon"}>
                             <div className="sec">
                                 <img className='blurar' src={blurar} alt="" />
                                 <h5>Origins</h5>
                             </div>
+                        </Link>
                         <div className="seccol">
                             <div className="sec2">
                                 <img className='blurar' src={blurar} alt="" />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./style.css";
 import sidelogo from "../assets/sidelogo.svg";
-import {supabase} from "../supabase"
+import { supabase } from "../supabase";
 import Button from '../components/button';
 import { Link } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ const StarIcon = ({ filled, onClick, onHover, onLeave }) => (
     </svg>
 );
 
-const Rating = ({ messageId }) => {
+const Rating = () => {
     const [hovered, setHovered] = useState(0);
     const [selected, setSelected] = useState(0);
     const [message, setMessage] = useState('');
@@ -50,15 +50,16 @@ const Rating = ({ messageId }) => {
         setError(null);
         setSuccessMsg('');
 
-        const updateData = { ratingstars: selected };
-        if (message.trim()) {
-            updateData.msgcontent = message.trim();
-        }
+        const newRow = {
+            ratingstars: selected,
+            ...(message.trim() && { msgcontent: message.trim() }),
+            date: new Date().toISOString().split('T')[0], 
+            status: 'new',
+        };
 
         const { error: supabaseError } = await supabase
             .from('messages')
-            .update(updateData)
-            .eq('id', messageId);
+            .insert(newRow);
 
         setLoading(false);
 
