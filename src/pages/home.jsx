@@ -16,10 +16,10 @@ const Home = () => {
         <>
         <main>
             <div className="homescreen">
-                <img src={sidelogo} alt="" />
+                <img src={sidelogo} alt="logo" />
 
                 <div className="hero">
-                    <img src={heroimg} alt="" />
+                    <img src={heroimg} alt="heroimage" />
                     <div className="herotxt">
                         <div className="date">
                             <h4>May 15 - May 20</h4> 
@@ -63,9 +63,9 @@ const Home = () => {
                 <div className="booki">
                     <h1 className="header">Your Booking</h1>
                     <div className="tick1">
-                        <img src={tick} alt="" />
+                        <img src={tick} alt="ticket" />
                         <div className="ticktxt">
-                            <img className='sidelogo' src={sidelogo} alt="" />
+                            <img className='sidelogo' src={sidelogo} alt="logo" />
                             <h1>VIP Experience</h1>
                             <div className="det">
                                 <div className="pair">
